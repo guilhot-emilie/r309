@@ -1,5 +1,6 @@
 import sys
 from thread1 import task
+from poolthreads import __main__
 
 
 def main():
