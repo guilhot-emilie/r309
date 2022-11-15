@@ -10,3 +10,9 @@ while msg !="bye" and msgserv !="bye" and msg !="arret" and msgserv !="arret" :
     msgserv = client_socket.recv(1024).decode()
     print("Message reçu:",msgserv)
 client_socket.close()
+
+def reception(client_socket):
+    msg = ""
+    while msg !="bye" and msgserv !="bye" and msg !="arret" and msgserv !="arret" :
+        msg = client_socket.recv(1024).decode()
+        print("Message reçu:",msgserv)
