@@ -31,6 +31,7 @@ class MainWindow(QMainWindow):
 
     def _actionOk(self):
         self.__bonjour.setText(f"Bonjour {self.__text.text()}")
+
     def _actionQuitter(self):
         QCoreApplication.exit(0)
 
